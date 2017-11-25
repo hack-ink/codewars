@@ -1,0 +1,1 @@
+fn accum(s: &str) -> String { s.chars().enumerate().map(|(i, c)| c.to_string().to_uppercase() + &(0..i).map(|_| c.to_string().to_lowercase()).collect::<String>()).collect::<Vec<_>>().join("-") }
