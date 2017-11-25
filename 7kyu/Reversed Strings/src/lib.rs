@@ -1,0 +1,1 @@
+fn solution(phrase: &str) -> String { String::from(phrase).chars().rev().collect() }
