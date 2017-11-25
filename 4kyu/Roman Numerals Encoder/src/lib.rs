@@ -19,24 +19,25 @@ fn num_as_roman(num: i32) -> String {
                 let mut r10 = "";
                 let mut result = String::new();
                 match digit {
-                    0 => {
-                        r1 = "I";
-                        r5 = "V";
-                        r10 = "X"
-                    }
-                    1 => {
-                        r1 = "X";
-                        r5 = "L";
-                        r10 = "C";
-                    }
-                    2 => {
-                        r1 = "C";
-                        r5 = "D";
-                        r10 = "M";
-                    }
-                    3 => {
-                        r1 = "M";
-                    }
+                    0 =>
+                        {
+                            r1 = "I";
+                            r5 = "V";
+                            r10 = "X"
+                        }
+                    1 =>
+                        {
+                            r1 = "X";
+                            r5 = "L";
+                            r10 = "C";
+                        }
+                    2 =>
+                        {
+                            r1 = "C";
+                            r5 = "D";
+                            r10 = "M";
+                        }
+                    3 => { r1 = "M"; }
                     _ => {}
                 }
                 match num {

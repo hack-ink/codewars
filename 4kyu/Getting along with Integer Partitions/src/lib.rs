@@ -9,8 +9,7 @@ fn part(n: i64) -> String {
     let len = v.len();
     let index = len / 2;
     let median;
-    if len % 2 == 0 { median = (v[index - 1] + v[index]) as f64 / 2f64; } 
-    else { median = v[index] as f64; }
+    if len % 2 == 0 { median = (v[index - 1] + v[index]) as f64 / 2f64; } else { median = v[index] as f64; }
     format!("Range: {} Average: {:.2} Median: {:.2}", v.last().unwrap() - v.first().unwrap(), v.iter().sum::<i64>() as f64 / len as f64, median)
 }
 

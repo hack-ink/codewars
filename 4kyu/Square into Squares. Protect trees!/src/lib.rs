@@ -14,9 +14,7 @@ fn aux(nb: i64, mut rac: i64) -> Option<Vec<i64>> {
     None
 }
 
-fn decompose(n: i64) -> Option<Vec<i64>> {
-    aux(n * n, ((n * n - 1) as f64).sqrt() as i64)
-}
+fn decompose(n: i64) -> Option<Vec<i64>> { aux(n * n, ((n * n - 1) as f64).sqrt() as i64) }
 
 //fn decompose(n: i64) -> Option<Vec<i64>> {
 //    partition(n * n, n)

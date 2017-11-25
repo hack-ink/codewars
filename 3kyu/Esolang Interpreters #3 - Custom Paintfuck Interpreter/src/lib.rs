@@ -37,10 +37,11 @@ impl Data2D {
             if times == self.iterations || index == code.len() { return self.grid_to_string(); }
             let char = code[index];
             match char {
-                char if pass && char != ']' => {
-                    index += 1;
-                    continue;
-                }
+                char if pass && char != ']' =>
+                    {
+                        index += 1;
+                        continue;
+                    }
                 'e' => if x == self.columns { x = 0; } else { x += 1; },
                 's' => if y == self.rows { y = 0; } else { y += 1; },
                 'w' => if x == 0 { x = self.columns; } else { x -= 1; },

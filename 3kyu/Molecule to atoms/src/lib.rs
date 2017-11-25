@@ -2,7 +2,7 @@ type Atom = (String, usize);
 type Molecule = Vec<Atom>;
 
 #[derive(Debug)]
-pub struct ParseError {
+struct ParseError {
     kind: ParseErrorKind
 }
 
@@ -12,7 +12,7 @@ enum ParseErrorKind {
     Mismatched(String)
 }
 
-pub fn parse_molecule(s: &str) -> Result<Molecule, ParseError> {
+fn parse_molecule(s: &str) -> Result<Molecule, ParseError> {
     let mut atoms: Vec<Atom> = Vec::new();
     let mut left_brackets: Vec<(char, usize)> = Vec::new();
     let mut indexes: Vec<usize> = Vec::new();
@@ -66,7 +66,7 @@ pub fn parse_molecule(s: &str) -> Result<Molecule, ParseError> {
     let mut all_indexes = Vec::new();
     for &(ref s1, _) in atoms.clone().iter() {
         let mut indexes = Vec::new();
-        for (j, &(ref s2, _)) in atoms.iter().enumerate() { if s1 == s2 { indexes.push(j); }}
+        for (j, &(ref s2, _)) in atoms.iter().enumerate() { if s1 == s2 { indexes.push(j); } }
         all_indexes.push(indexes);
     }
     all_indexes.sort();

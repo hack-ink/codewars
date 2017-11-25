@@ -37,6 +37,4 @@ fn gcd(a: i64, b: i64) -> i64 {
     n << shift
 }
 
-fn lcm(a: i64, b: i64) -> i64 {
-    (a * b) / gcd(a, b)
-}
+fn lcm(a: i64, b: i64) -> i64 { (a * b) / gcd(a, b) }
