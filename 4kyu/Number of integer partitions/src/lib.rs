@@ -1,5 +1,7 @@
 fn partitions(n: isize) -> isize {
-    if n == 0 { return 0; }
+    if n == 0 {
+        return 0;
+    }
     let n = n as usize;
     let mut c1 = Vec::new();
     let mut c2 = Vec::new();
