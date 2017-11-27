@@ -1,1 +1,2 @@
 *.md linguist-language=Rust
+*.tomal linguist-language=Rust
