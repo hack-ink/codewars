@@ -1,0 +1,6 @@
+[package]
+name = "a-rule-of-divisibility-by-13"
+version = "0.1.0"
+authors = ["AurevoirXavier <c.estlavie@icloud.com>"]
+
+[dependencies]
