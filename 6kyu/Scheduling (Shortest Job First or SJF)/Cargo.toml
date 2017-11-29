@@ -1,0 +1,6 @@
+[package]
+name = "scheduling-shortest-job-first-or-SJF"
+version = "0.1.0"
+authors = ["AurevoirXavier <c.estlavie@icloud.com>"]
+
+[dependencies]
