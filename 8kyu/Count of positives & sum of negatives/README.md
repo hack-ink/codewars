@@ -1,3 +1,5 @@
+## Detail
+
 [Count of positives / sum of negatives](https://www.codewars.com/kata/576bb71bbbcf0951d5000044)
 
 Given an array of integers.
@@ -21,3 +23,6 @@ The passed array should NOT be changed. Read more [here](https://en.wikipedia.or
 input Vec::<i32> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]
 return Vec::<i32> [10, -65]
 ```
+## Thinking
+
+Use `fold(vec![0, 0], |mut acc, &x| {}`.
