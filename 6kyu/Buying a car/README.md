@@ -51,5 +51,5 @@ We don't take care of a deposit of savings in a bank:-)
 3. Calculating sum: `old - new + saving`.
 4. Judgment: `if month % 2 == 0 { prec + 0.5 }`. (Tips: 0 % 0 == 0)
 5. Adding 1 to month: `month + 1`.
-6. Judgment: `if sum >= 0`
+6. Judgment: `if sum >= 0` (Tips: if return sum, remember `round()` it)
 
