@@ -1,3 +1,5 @@
+# Detail
+
 [Buying a car](https://www.codewars.com/kata/buying-a-car/train/rust)
 
 A man has a rather old car being worth $2000. He saw a secondhand car being worth $8000. He wants to keep his old car until he can buy the secondhand one.
@@ -34,12 +36,16 @@ We don't take care of a deposit of savings in a bank:-)
 
 # Thinking
 
-|        Old        | New  | Save | Rate | Month | Fixed |  Sum  |
-| :---------------: | :--: | :--: | :--: | :---: | :---: | :---: |
-|       2000        | 8000 |  0   | 1.5  |   0   |  0.5  | -6000 |
-|       1970        |      |      |      |       |       |       |
-|  $\approx$ 1940   |      |      |      |       |       |       |
-|    1,911.34325    |      |      |      |       |       |       |
-|  1,882.67310125   |      |      |      |       |       |       |
-| 1,854.43300473125 |      |      |      |       |       |       |
+|       Old       |      New      | Save  | Rate | Month | Fixed |      Sum      |
+| :-------------: | :-----------: | :---: | :--: | :---: | :---: | :-----------: |
+|      2,000      |     8,000     |   0   | 1.5  |   0   |   0   |    -6,000     |
+|      1,970      |     7,880     | 1,000 | 1.5  |   1   |  0.5  |    -4,910     |
+|     1,930.6     |    7,722.4    | 2,000 | 2.0  |   2   |  0.5  |   -3,791.8    |
+|    1,891.988    |   7,567.952   | 3,000 | 2.0  |   3   |   1   |  -2,675.964   |
+|   1,844.6883    |  7,378.7532   | 4,000 | 2.5  |   4   |   1   |  -1,534.0649  |
+|  1,798.5710925  |  7,194.28437  | 5,000 | 2.5  |   5   |  1.5  | -395.7132775  |
+| 1,744.613959725 | 6,978.4558389 | 6,000 | 3.0  |   6   |  1.5  | 766.158120825 |
 
+`Sum = (Old * rate) - (New * rate) + save`
+
+`    => rate * (Old - New) + save`
