@@ -12,3 +12,6 @@ For example:
 dna_to_rna("GCAT") //=> "GCAU"
 ```
 
+## Thinking 
+
+Use `replace()`.
