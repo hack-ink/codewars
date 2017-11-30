@@ -1,3 +1,5 @@
+## Detail
+
 [How many lightsabers do you own?](https://www.codewars.com/kata/51f9d93b4095e0a7200001b8)
 
 Inspired by the development team at Vooza, write the function **howManyLightsabersDoYouOwn** that 
@@ -13,3 +15,6 @@ No starting help here -- you'll need to know how to write a function that accept
 how_many_lightsabers_do_you_own("Adam") // => 0
 how_many_lightsabers_do_you_own("Zach") // => 18
 ```
+## Thinking
+
+Judgement: `if name == "Zach"`.
