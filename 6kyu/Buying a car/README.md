@@ -32,8 +32,6 @@ nbMonths(8000, 8000, 1000, 1.5) should return [0, 0]
 
 We don't take care of a deposit of savings in a bank:-)
 
----
-
 ## Thinking
 
 |       old       |      new      | saving | prec | month | fixed |      sum      |
