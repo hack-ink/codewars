@@ -48,4 +48,4 @@ We don't take care of a deposit of savings in a bank:-)
 
 `Sum = (Old * rate) - (New * rate) + save`
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`=> rate * (Old - New) + save`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`=> rate * (Old - New) + save`
