@@ -1,3 +1,5 @@
+## Detail
+
 [Get Nth Even Number](https://www.codewars.com/kata/5933a1f8552bc2750a0000ed)
 
 Return the Nth Even Number
@@ -13,3 +15,7 @@ nthEven(1298734) //=> 2597466
 The input will not be 0.
 
 Hint: Think Math
+
+## Thinking
+
+Equation: `x = 2 * (n - 1)`.
