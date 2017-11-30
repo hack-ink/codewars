@@ -34,3 +34,4 @@ Go to the store and buy some more, 99 bottles of beer on the wall.
 
 ## Thinking
 
+Just match `"H"`, `"Q"`, `"9"`, `_` and use `Sting::from()`.
