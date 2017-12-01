@@ -21,4 +21,4 @@ If you are an experienced Javascript programmer, try shortening your code as muc
 
 ## Thinking
 
-Just match `'<'`, `'>'`, `'"'`, `'&'` and _.
+Just match `'<'`, `'>'`, `'"'`, `'&'` and `_`.
