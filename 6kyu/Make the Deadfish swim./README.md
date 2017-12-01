@@ -16,4 +16,4 @@ parse( "iiisdoso" ); // should == [ 8 , 64 ]
 
 ## Thinking
 
-Just match `i`, `d`, `s`, `o` and remember handle the exceptional case.
+Just match `'i'`, `'d'`, `'s'`, `'o'` and remember handle the exceptional case.
