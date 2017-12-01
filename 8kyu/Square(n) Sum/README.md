@@ -11,3 +11,5 @@ square_sum([1, 2, 2]) // should return 9
 ```
 
 ## Thinking
+
+Use `fold(0, |t, i| t + i * i)`.
