@@ -1,3 +1,5 @@
+## Detail
+
 [Number of People in the Bus](https://www.codewars.com/kata/5648b12ce68d9daa6b000099)
 
 There is a bus moving in the city, and it takes and drop some people in each bus stop.
@@ -11,3 +13,7 @@ Take a look on the test cases.
 Please keep in mind that the test cases ensure that the number of people in the bus is always >= 0. So the return integer can't be negative.
 
 The second value in the first integer array is 0, since the bus is empty in the first bus stop.
+
+## Thinking
+
+Use `fold(0, |acc, x| acc + x.0 - x.1)`.
