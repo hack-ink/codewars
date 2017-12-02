@@ -16,13 +16,16 @@ Remark: You can take two points of view to do this kata:
 ## Thinking
 
 ```rust
-u0 = 1, u1 = 2
+Since:
+    u0 = 1, u1 = 2
+    6 u0 u1 - 5 u1 u2 + u1 u2 = 0
 
-6 u0 u1 - 5 u1 u2 + u1 u2 = 0
-12 - 5 u2 + 2 u2 = 0
-u2 = 4
-u3 = 8
-...
-un = 2^n
+Therefore:
+    12 - 5 u2 + 2 u2 = 0
+    u2 = 4
+    ...
+    u3 = 8
+    ...
+    un = 2^n
 ```
 
