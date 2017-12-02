@@ -44,10 +44,12 @@ Since:
     total stopping distance = braking distance + reaction distance
 	    braking distance = d1
             E = W
-	        E = 1/2 * m * v^2
+            E = 1/2 * m * v^2
             W = mu * m * g * d1
+
             1/2 * m * v * v = mu * m * g * d1
             =>           d1 = (v * v) / (2 * mu * g)
+
         reaction distance = v * reaction time // here we ignore mu
 ---
     g = 9.81 (m/s/s)
@@ -71,6 +73,6 @@ Since:
 Therefore:
     d = ((v * v) / (2 * mu * g)) + (v * reaction time)
     d = ((v * v) / (2 * 0.7 * 9.81)) + v
-    Just slove this two-dimensional linear equation. (Remember multiplied v by 3.6)
+Just slove this two-dimensional linear equation. (tips: remember multiplied v by 3.6)
 ```
 
