@@ -26,5 +26,3 @@ Obviously, when the speed equal zero `(v == 0)`, the ball reach the highest poin
 Since `v = gt`
 
 Therefore `t = v / g`
-
-Q.E.D.
