@@ -21,8 +21,8 @@ Write a function `max_ball` with parameter `v (in km per hour)` that returns the
 
 ## Thinking
 
-Obviously, when the speed equal zero `(v == 0)`, the ball reach the highest point.
+Obviously, when the speed equals zero `(v == 0)`, the ball reach the highest point.
 
 Since `v = gt`.
 
-Therefore `t = v / g`.
+Therefore `t = v / g`. (tips: remember to handle the float point question)
