@@ -41,7 +41,6 @@ speed(83.9598760937531, 0.7) -> 100.0
 
 ```rust
 Since:
-
     total stopping distance = braking distance + reaction distance
         braking distance = d1
             E = W
@@ -52,14 +51,13 @@ Since:
         =>           d1 = (v * v) / (2 * mu * g)
 
         reaction distance = v * reaction time // here we ignore mu
----
+
     g = 9.81 (m/s/s)
     reaction time = 1 s
     v = 100 km/h = 100/3.6 (m/s)
     mu = 0.7
 
 Therefore:
-
     total stopping distance = ((v * v) / (2 * mu * g)) + (v * reaction time)
                             = ((100/3.6 * 100/3.6) / (2 * 0.7 * 9.81)) + (100/3.6 * 1)
                             = 83.9598760937531                 
@@ -69,15 +67,13 @@ Therefore:
 
 ```rust
 Since: 
-
     Task 1
     total stopping distance = d
 
 Therefore:
-
     d = ((v * v) / (2 * mu * g)) + (v * reaction time)
     d = ((v * v) / (2 * 0.7 * 9.81)) + v
 
-Just slove this two-dimensional linear equation. (tips: remember multiplied v by 3.6)
+    Just slove this two-dimensional linear equation. (tips: remember multiplied v by 3.6)
 ```
 
