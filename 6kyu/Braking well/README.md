@@ -44,11 +44,10 @@ Since:
     total stopping distance = braking distance + reaction distance
 	    braking distance = d1
             E = W
-            E = 1/2 * m * v^2
-            W = mu * m * g * d1
-
+                E = 1/2 * m * v^2
+                W = mu * m * g * d1
             1/2 * m * v * v = mu * m * g * d1
-            =>           d1 = (v * v) / (2 * mu * g)
+          =>             d1 = (v * v) / (2 * mu * g)
 
         reaction distance = v * reaction time // here we ignore mu
 ---
