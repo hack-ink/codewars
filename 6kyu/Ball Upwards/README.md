@@ -25,4 +25,4 @@ Obviously, when the speed equals zero `(v == 0)`, the ball reach the highest poi
 
 Since `v = gt`.
 
-Therefore `t = v / g`. (tips: remember to handle the float point question)
+Therefore `t = v / g`. (tips: remember to handle the float point problem)
