@@ -34,7 +34,7 @@ In that case the returned structure of **C** will have its `sz` component equal 
 
 ## Thinking
 
-You can simply draw a picture, using the square to cut the rectangle. It will help you to understand.
+You can simply draw a rectangle. Then cut the rectangle with a square whose length is the length of the rectangle's shorter side. It will help you to understand.
 
 **logic**
 
