@@ -32,3 +32,14 @@ In that case the returned structure of **C** will have its `sz` component equal 
   sqInRect(5, 5) should return None
 ```
 
+## Thinking
+
+You can simply draw a picture, using the square to cut the rectangle. It will help you to understand.
+
+**logic**
+
+1. If `a` equals `b`, return `None`.
+2. Compare `a` with `b`.
+3. Push the smaller one into `Vec`.
+4. Use the larger one minus the other one and we called the result `tmp`, which we consider it as `b`.
+5. Repeat, until `a` equals zero.
