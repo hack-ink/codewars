@@ -43,7 +43,7 @@ Actually, we have two linear equations:
 
 ```rust
 Suppose:
-    he have m Zlotty (or was it Meticals?).
+    he has m Zlotty (or was it Meticals?).
     c Zlotty (or was it Meticals?) each car. 
     b Zlotty (or was it Meticals?) each boat.
 
