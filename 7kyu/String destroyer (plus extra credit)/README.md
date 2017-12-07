@@ -1,3 +1,5 @@
+## Detail
+
 [String destroyer (plus extra credit)](https://www.codewars.com/kata/5872637c2eefcb1216000081)
 
 \# Background:
@@ -16,9 +18,8 @@ Then you are given random **sets** of letters to throw against this string. For 
 
 Whenever there is a match (case sensitive), the letter in the original string is knocked out and replaced by an underscore. Using the random set above as an example would result in:
 
-```
+```rust
 "a b c d _ f g h _ j k l m n o p q r s t u v w x y z"
-
 ```
 
 \# Implementation:
@@ -47,3 +48,9 @@ destroy(input_set) ->  "a _ c _ e f g h i j k l m n o p q r s t u v w x y z"
 \# Extra credit question:
 
 If the average random set thrown at the lowercase alphabet is ten (10) characters long (same rules as above, uppercase and lowercase letters only), then how many random sets - on average - do you have to throw at the alphabet in order to be left with only underscores?
+
+## Thinking
+
+Think about how to use `union()`. 
+
+*This kata has a bug utill 12-5-2017*, add `#[allow(unused_mut)]` at the foot to finish this kata.
