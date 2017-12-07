@@ -1,3 +1,5 @@
+## Detail
+
 [Circle area inside square](https://www.codewars.com/kata/5899aa695401a83a5c0000c4)
 
 Turn an area of a square in to an area of a circle that fits perfectly inside the square.
@@ -15,3 +17,7 @@ squareAreaToCircle(16); //should return size of the circle
 You don't have to worry about error handling or negative number input: `size >= 0`.
 
 This kata might be simpler than you expect, but good luck!
+
+## Thinking
+
+Just calculate the circle's area. (tips: you can use `std::f64::consts::FRAC_PI_4`)
