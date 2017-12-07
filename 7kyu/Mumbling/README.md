@@ -1,3 +1,5 @@
+## Detail
+
 [Mumbling](https://www.codewars.com/kata/5667e8f4e3f572a8f2000039)
 
 This time no story, no theory. The examples below show you how to write function `accum`:
@@ -11,3 +13,7 @@ accum(&"cwAt")    // "C-Ww-Aaa-Tttt"
 ```
 
 The parameter of accum is a string which includes only letters from `a..z` and `A..Z`.
+
+## Thinking
+
+Use `to_lowercase()` and `to_uppercase()`. (tips: ToLowercase and ToUppercase are different type, you should `collect()` them first.)
