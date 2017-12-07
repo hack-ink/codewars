@@ -1,3 +1,5 @@
+## Detail
+
 [Complementary DNA](https://www.codewars.com/kata/complementary-dna/train/rust)
 
 Deoxyribonucleic acid (DNA) is a chemical found in the nucleus of cells and carries the "instructions" for the development and functioning of living organisms.
@@ -12,3 +14,6 @@ DNA_strand ("ATTGC") # return "TAACG"
 DNA_strand ("GTAT") # return "CATA"
 ```
 
+## Thinking
+
+Just match `'A'`, `'T'`, `'C'`, `'G'` and `_`.
