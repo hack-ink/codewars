@@ -1,3 +1,5 @@
+## Detail
+
 [Sum of odd numbers](https://www.codewars.com/kata/55fd2d567d94ac3bc9000064)
 
 Given the triangle of consecutive odd numbers:
@@ -18,3 +20,6 @@ row_sum_odd_numbers(1); # 1
 row_sum_odd_numbers(2); # 3 + 5 = 8
 ```
 
+## Thinking
+
+Always equals to n cubic.
