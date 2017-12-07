@@ -25,4 +25,4 @@ new_avg([14, 30, 5, 7, 9, 11, 15], 2) should raise an error (ValueError or inval
 ```
 ## Thinking
 
-`ceil()` the `(arr.len() as f64 + 1.) * newavg - arr.iter().sum::<f64>()`.
+Expected donation: `ceil()` the `(arr.len() as f64 + 1.) * newavg - arr.iter().sum::<f64>()`.
