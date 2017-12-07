@@ -1,3 +1,5 @@
+## Detail
+
 [Moves in squared strings (I)](https://www.codewars.com/kata/56dbe0e313c2f63be4000b25)
 
 This kata is the first of a sequence of four about "Squared Strings".
@@ -56,3 +58,7 @@ The form of the parameter `fct` in oper changes according to the language. You c
 The input strings are separated by `,` instead of `\n`. The ouput strings should be separated by `\r` instead of `\n`. See "Sample Tests".
 
 Forthcoming katas will study other tranformations.
+
+## Thinking
+
+Think about how to use `rev()`.
