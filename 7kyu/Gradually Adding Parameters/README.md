@@ -1,3 +1,5 @@
+## Detail
+
 [Gradually Adding Parameters](https://www.codewars.com/kata/555b73a81a6285b6ce000047)
 
 This kata is all about adding numbers.
@@ -19,3 +21,6 @@ Remember the function will return 0 if no arguments are passed.
   add(&[1,2,3]); //=> 14
   add(&[1,4,-5,5]); //=> 14
 ```
+## Thinking
+
+Think about using `zip(1..)`.
