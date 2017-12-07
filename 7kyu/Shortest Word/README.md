@@ -8,4 +8,6 @@ String will never be empty and you do not need to account for different data typ
 
 ## Thinking
 
-Give `str::len` to `map()` and use `min()`.
+1. `split_whitespace()`.
+2. Give `str::len` to `map()`.
+3. Use `min()`.
