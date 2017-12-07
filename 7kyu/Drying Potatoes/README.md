@@ -1,3 +1,5 @@
+## Detail
+
 [Drying Potatoes](https://www.codewars.com/kata/58ce8725c835848ad6000007)
 
 All we eat is water and dry matter.
@@ -25,3 +27,7 @@ Write function `potatoes` with
 \# Example:
 
 `potatoes(99, 100, 98) --> 50`
+
+## Thinking
+
+`result = initial weight * (100 - initial humidity percent) / (100 - final humidity percent)`
