@@ -1,3 +1,5 @@
+## Detail
+
 [Don't give me five!](https://www.codewars.com/kata/5813d19765d81c592200001a)
 
 In this kata you get the start number and the end number of a region and should return the count of all numbers except numbers with a 5 in it. The start and the end number are both inclusive!
@@ -17,3 +19,7 @@ I'm very curious for your solutions and the way you solve it. Maybe someone of y
 Have fun coding it and please don't forget to vote and rank this kata! :-) 
 
 I have also created other katas. Take a look if you enjoyed this kata!
+
+## Thinking
+
+Use `filter()`, `contains()` and `count()` that you can slove it easily.
