@@ -1,3 +1,5 @@
+## Detail
+
 [Operations with sequence](https://www.codewars.com/kata/596ddaccdd42c1cf0e00005c**Steps**
 
 1. Square the numbers that are greater than zero.
@@ -16,3 +18,7 @@
 ```
 
 P.S.: The sequence consists only of integers. And try not to use "for", "while" or "loop" statements.)
+
+## Thinking
+
+Use `iter().enumerate()`, the index will help you a lot.
