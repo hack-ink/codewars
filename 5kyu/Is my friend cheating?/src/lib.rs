@@ -1,5 +1,5 @@
 fn remove_nb(m: i32) -> Vec<(i32, i32)> {
-    let sum = (0..m as i64 + 1).sum::<i64>();
+    let sum = m as i64 * (m as i64 + 1) / 2;
     let mut root = (sum as f64).sqrt() as i32 + 1;
     let mut result = vec![];
     for a in (m / 2..root).rev() {
