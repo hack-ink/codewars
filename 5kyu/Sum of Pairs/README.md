@@ -35,3 +35,4 @@ Negative numbers and duplicate numbers can and will appear.
 
 ## Thinking
 
+Think about using `HashSet` and `contains()`. (tips: we always return the two element that they are the closest)
