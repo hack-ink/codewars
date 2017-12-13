@@ -6,11 +6,12 @@ enum Status {
 }
 
 fn init_fac(x: u64, status: Status) -> Vec<u64> {
+    let mut v = vec![];
     match status {
-        Status::Code => (),
-        Status::Decode => (),
+        Status::Code => {}
+        Status::Decode => {}
     }
-    unimplemented!()
+    v
 }
 
 fn dec2_fact_string(nb: u64) -> String {
