@@ -34,3 +34,5 @@ finance(5000) --> 62537505000
 \#Hint: try to avoid nested loops
 
 ## Thinking
+
+Just think about sum of series, you will find a formula. If you don't know this math theory, use `fold()` or `for` to calculate the sum.
