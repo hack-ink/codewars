@@ -1,8 +1,4 @@
 fn choose_best_sum(t: i32, k: i32, ls: &Vec<i32>) -> i32 {
-    let mut ls = ls.clone();
-    ls.sort();
-    let avg = ls.iter().sum::<i32>() / ls.len() as i32;
-    println!("{:?}, {}", ls, avg);
     1
 }
 
