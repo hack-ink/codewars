@@ -1,0 +1,6 @@
+[package]
+name = "esolang-interpreters-1-introduction-to-esolangs-and-my-first-interpreter-mini-string-fuck"
+version = "0.1.0"
+authors = ["AurevoirXavier <c.estlavie@icloud.com>"]
+
+[dependencies]
