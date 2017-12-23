@@ -1,5 +1,8 @@
+cmake-build-debug
+target
+
 .DS_Store
 .idea
-target
+
 *.iml
 *.lock
