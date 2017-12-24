@@ -1,4 +1,4 @@
-![](https://www.codewars.com/users/AurevoirXavier/badges/small)
+![Aurevoir Xavier's codewars badges](https://www.codewars.com/users/AurevoirXavier/badges/small)
 
 All kata done with **Rust**.
 
