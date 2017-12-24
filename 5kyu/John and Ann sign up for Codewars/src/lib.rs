@@ -18,20 +18,20 @@ fn a_j(person: Person, n: i32) -> Vec<i32> {
     }
 }
 
-pub fn john(n: i32) -> Vec<i32> {
+fn john(n: i32) -> Vec<i32> {
     if n == 0 { return vec![0]; }
     a_j(Person::John, n)
 }
 
-pub fn ann(n: i32) -> Vec<i32> {
+fn ann(n: i32) -> Vec<i32> {
     if n == 0 { return vec![1]; }
     a_j(Person::Ann, n)
 }
 
-pub fn sum_john(n: i32) -> i32 {
+fn sum_john(n: i32) -> i32 {
     john(n).iter().sum()
 }
 
-pub fn sum_ann(n: i32) -> i32 {
+fn sum_ann(n: i32) -> i32 {
     ann(n).iter().sum()
 }

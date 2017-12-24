@@ -1,6 +1,10 @@
+extern crate help_your_granny;
+
+#[macro_use] extern crate maplit;
+
 use std::collections::HashMap;
 
-pub fn tour(frnds: &[&str], fr_twns: HashMap<&str, &str>, dist: HashMap<&str, f64>) -> i32 {
+fn tour(frnds: &[&str], fr_twns: HashMap<&str, &str>, dist: HashMap<&str, f64>) -> i32 {
     let mut dists = vec![];
     for frnd in frnds.into_iter() {
         if let Some(fr_twn) = fr_twns.get(frnd) {
