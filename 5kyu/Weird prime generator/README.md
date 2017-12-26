@@ -36,3 +36,5 @@ Removing the 1s gives a third sequence: `p: 5, 3, 11, 3, 23, 3...` where you can
 \#Note: You can write directly functions `3:`, `5:` and `7:`. There is no need to write functions `1:`, `2:`, `4:` `6:`except out of pure curiosity.
 
 ## Thinking
+
+7 simple functions, need some patient. (Tips: you don't need to store the whole `a(n)` or `g(n)` in collection, just use some temp variables to store the `(n - 1)`term)
