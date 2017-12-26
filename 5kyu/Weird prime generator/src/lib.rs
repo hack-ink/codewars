@@ -22,13 +22,9 @@ fn gn(n: i64) -> Vec<i64> {
 
 fn pn(n: i64) -> Vec<i64> {
     let mut pn: Vec<i64> = gn(n);
-    println!("{:?}", pn);
     pn.dedup();
-    println!("{:?}", pn);
     pn.sort();
-    println!("{:?}", pn);
     pn.dedup();
-    println!("{:?}", pn);
     pn
 }
 
