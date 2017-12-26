@@ -37,3 +37,5 @@ For Go: nil slice is expected when there are no gap between m and n. Example: ga
 \#Ref <https://en.wikipedia.org/wiki/Prime_gap>
 
 ## Thinking
+
+See another kata. 6kyu step in primes.
