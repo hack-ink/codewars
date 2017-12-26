@@ -2,25 +2,20 @@ fn gcd(a: i64, b: i64) -> i64 {
     if b == 0 { a } else { gcd(b, a % b) }
 }
 
-fn an(n: i64) -> Vec<i64> {
-    let mut an = vec![7];
-    for i in 2..n + 1 {
-        let prev = an.last().unwrap().clone();
-        an.push(prev + gcd(i, prev));
-    }
-    an
-}
-
-fn gn(n: i64) -> Vec<i64> {
-    let an = an(n);
+fn count_ones(n: i64) -> i64 {
+    if n == 0 { return 0; }
     let mut gn = vec![1];
-    for i in 1..an.len() {
-        gn.push(an[i] - an[i - 1]);
+    let mut an_prev = 7;
+    for i in 2..n + 1 {
+        let gcd = gcd(i, an_prev);
+        if gcd == 1 { gn.push(gcd); }
+        an_prev += gcd;
     }
-    gn
+    gn.len() as i64
 }
 
-fn pn(n: i64) -> Vec<i64> {
+fn max_pn(n: i64) -> i64 {
+    if n == 0 { return 0; }
     let mut prev = 7;
     let mut pn = vec![];
     let mut i = 2;
@@ -31,19 +26,22 @@ fn pn(n: i64) -> Vec<i64> {
         if p != 1 && !pn.contains(&p) { pn.push(p); }
         i += 1;
     }
-    pn
-}
-
-fn count_ones(n: i64) -> i64 {
-    gn(n).into_iter().filter(|&x| x == 1).count() as i64
-}
-
-fn max_pn(n: i64) -> i64 {
-    pn(n).into_iter().max().unwrap()
+    pn.into_iter().max().unwrap()
 }
 
 fn an_over_average(n: i64) -> i64 {
-    unimplemented!()
+    if n == 0 { return 0; }
+    let mut gn = 1;
+    let mut an_prev = 7;
+    let mut i = 1;
+    let mut an_over = vec![];
+    while (an_over.len() as i64) < n {
+        if gn != 1 { an_over.push(an_prev / i); }
+        i += 1;
+        gn = gcd(i, an_prev);
+        an_prev += gn;
+    }
+    an_over.into_iter().sum::<i64>() / n
 }
 
 fn testing1(n: i64, exp: i64) -> () {
@@ -68,5 +66,6 @@ fn returns_expected() {
     testing2(5, 47);
     testing2(7, 101);
 
-//    testing3(5, 3);
+    testing3(5, 3);
+    testing3(1, 3);
 }
