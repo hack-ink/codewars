@@ -1,5 +1,5 @@
 fn gap(g: i32, m: u64, n: u64) -> Option<(u64, u64)> {
-    // your code
+    
 }
 
 fn testing(g: i32, m: u64, n: u64, exp: Option<(u64, u64)>) -> () {
