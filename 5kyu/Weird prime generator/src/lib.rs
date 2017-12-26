@@ -4,19 +4,32 @@ fn gcd(a: i64, b: i64) -> i64 {
 
 fn an(n: i64) -> Vec<i64> {
     let mut v = vec![7];
-    while v.len() < n as usize {
+    for i in 2..n + 1 {
         let prev = v.last().unwrap().clone();
-        v.push(prev + gcd(n, prev));
+        v.push(prev + gcd(i, prev));
     }
     v
 }
 
 fn gn(n: i64) -> Vec<i64> {
-    let mut gn = an(n);
-    if gn.len() > 1 {
-        for in {}
+    let an = an(n);
+    let mut gn = vec![1];
+    for i in 1..an.len() {
+        gn.push(an[i] - an[i - 1]);
     }
     gn
+}
+
+fn pn(n: i64) -> Vec<i64> {
+    let mut pn: Vec<i64> = gn(n);
+    println!("{:?}", pn);
+    pn.dedup();
+    println!("{:?}", pn);
+    pn.sort();
+    println!("{:?}", pn);
+    pn.dedup();
+    println!("{:?}", pn);
+    pn
 }
 
 fn count_ones(n: i64) -> i64 {
@@ -24,7 +37,7 @@ fn count_ones(n: i64) -> i64 {
 }
 
 fn max_pn(n: i64) -> i64 {
-    unimplemented!()
+    pn(n).last().unwrap().clone()
 }
 
 fn an_over_average(n: i64) -> i64 {
@@ -49,9 +62,9 @@ fn returns_expected() {
     testing1(10, 8);
     testing1(100, 90);
 
-//    testing2(1, 5);
-//    testing2(5, 47);
-//    testing2(7, 101);
+    testing2(1, 5);
+    testing2(5, 47);
+    testing2(7, 101);
 
 //    testing3(5, 3);
 }
