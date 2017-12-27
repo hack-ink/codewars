@@ -53,3 +53,6 @@ Shell tests only lengthSupUk
 
 ## Thinking
 
+Since: detail
+
+Therefore: `u[i] = un[i - un[i - 1]] + un[i - un[i - 2]]` (tips: `i > 1`, since index from **0**)
