@@ -23,3 +23,5 @@ A string of braces is considered valid if all braces are matched with the correc
 ```
 
 ## Thinking
+
+Use a stack to store them. If left bracket then `push()`. If right bracket then `pop()`.
