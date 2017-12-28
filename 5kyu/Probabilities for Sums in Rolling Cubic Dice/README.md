@@ -63,3 +63,6 @@ Have a nice time!
 
 ## Thinking
 
+My solution is save every dice in a collection then calculate all possible.
+
+But you can try to implement a recursive function. `rolldice_sum_prob(sum - ???, dice_amount - 1)`
