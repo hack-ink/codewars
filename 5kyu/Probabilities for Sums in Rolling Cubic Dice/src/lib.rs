@@ -1,18 +1,34 @@
-fn rolldice_sum_prob(sum: i32, dice_amount: i32) -> f64 {
-    let option = 6u64.pow(dice_amount as u32);
+/*fn rolldice_sum_prob(sum:i32, dice_amount:i32) -> f64 {
+    let dice_amount = dice_amount as usize;
     let mut dices = vec![];
-    dices.resize(dice_amount as usize, 1);
+    dices.resize(dice_amount, 1);
     let mut candidates = 0;
-    let mut count = 0;
-    for i in 0..dice_amount as usize {
-        for v in 1..7 {
+    loop {
+        for v in 2..8 {
             if dices.iter().sum::<i32>() == sum { candidates += 1; }
-            dices[i] = v;
-            count += 1;
+            dices[0] = v;
+        }
+        for i in 0..dice_amount {
+            if dices[i] == 7 {
+                if i + 1 == dice_amount { return candidates as f64 / 6u64.pow(dice_amount as u32) as f64; }
+                dices[i] = 1;
+                dices[i + 1] += 1;
+                if dices[i + 1] != 7 { break; }
+            }
         }
     }
-    println!("{}", count);
-    candidates as f64 / option as f64
+}*/
+
+fn rolldice_sum_prob(sum: i32, dice_amount: i32) -> f64 {
+    if sum < dice_amount || sum > 6 * dice_amount {
+        0f64
+    } else if dice_amount == 0 {
+        1f64
+    } else {
+        (1..7)
+            .map(|d| rolldice_sum_prob(sum - d, dice_amount - 1))
+            .sum::<f64>() / 6f64
+    }
 }
 
 fn assert_fuzzy_eq(actual: f64, expected: f64, eps: f64) {
