@@ -1,3 +1,5 @@
+## Detail
+
 [1/n- Cycle](https://www.codewars.com/kata/1-slash-n-cycle/train/rust)
 
 Let be `n` an integer prime with `10` e.g. `7`. 
@@ -29,3 +31,9 @@ cycle(22) = -1 since 1/22 ~ 0.0 45 45 45 45 ...
 Note
 
 - Translators are welcome for all languages.
+
+## Thinking
+
+When you are no clue that carefully watched every detail of:
+
+use `div * 10` to mod `n`. When div equals 1, it will start next loop.
