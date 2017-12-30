@@ -40,3 +40,7 @@ Finally, declare and define a public method `isNormalized`/`IsNormalized`/`is_no
 2. **Program a Calculator #2 - 3D Vectors**
 
 ## Thinking
+
+Easy kata but need some math knowledge.
+
+By the way, you need to be careful in `is_parallel_to()` which you should handle many situations about `0`.

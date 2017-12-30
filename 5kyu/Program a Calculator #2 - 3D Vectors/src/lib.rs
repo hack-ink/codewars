@@ -1,6 +1,59 @@
 #[derive(Copy, Clone)]
-struct Vector {
-    // ...
+struct Vector { i: f64, j: f64, k: f64 }
+
+impl Vector {
+    fn new(i: f64, j: f64, k: f64) -> Vector { Vector { i, j, k } }
+
+    fn get_magnitude(&self) -> f64 { (self.i.powi(2) + self.j.powi(2) + self.k.powi(2)).sqrt() }
+
+    fn get_i() -> Vector { Vector { i: 1., j: 0., k: 0. } }
+
+    fn get_j() -> Vector { Vector { i: 0., j: 1., k: 0. } }
+
+    fn get_k() -> Vector { Vector { i: 0., j: 0., k: 1. } }
+
+    fn add(&self, other: Vector) -> Vector { Vector { i: self.i + other.i, j: self.j + other.j, k: self.k + other.k } }
+
+    fn multiply_by_scalar(&self, scalar: f64) -> Vector { Vector { i: self.i * scalar, j: self.j * scalar, k: self.k * scalar } }
+
+    fn dot(&self, other: Vector) -> f64 { self.i * other.i + self.j * other.j + self.k * other.k }
+
+    fn cross(&self, other: Vector) -> Vector { Vector { i: self.j * other.k - self.k * other.j, j: self.k * other.i - self.i * other.k, k: self.i * other.j - self.j * other.i } }
+
+    fn non_zero(&self) -> bool {
+        if self.i != 0. || self.j != 0. || self.k != 0. { return true; }
+        false
+    }
+
+    fn is_parallel_to(&self, other: Vector) -> bool {
+        if self.non_zero() && other.non_zero() {
+            let ks = vec![(self.i, other.i), (self.j, other.j), (self.k, other.k)];
+            for &(s, o) in ks.iter() { if (s == 0. && o != 0.) || (s != 0. && o == 0.) { return false; } }
+            let mut ks = ks.into_iter().map(|(s, o)| (s / o).abs()).filter(|&k| k > 0.);
+            let k = ks.next().unwrap();
+            while let Some(next) = ks.next() { if !are_equals(k, next) { return false; } }
+            return true;
+        }
+        false
+    }
+
+    fn is_perpendicular_to(&self, other: Vector) -> bool {
+        if !self.non_zero() && !other.non_zero() { return false; }
+        if self.non_zero() && other.non_zero() {
+            if are_equals(self.dot(other), 0.) { return true; }
+        }
+        false
+    }
+
+    fn normalize(&self) -> Vector {
+        let magnitude = self.get_magnitude();
+        Vector { i: self.i / magnitude, j: self.j / magnitude, k: self.k / magnitude }
+    }
+
+    fn is_normalized(&self) -> bool {
+        if are_equals(self.get_magnitude(), 1.) { return true; }
+        false
+    }
 }
 
 fn are_equals(a: f64, b: f64) -> bool {
@@ -90,6 +143,10 @@ fn parallel_test() {
     let d = Vector::new(-12.0, 1.0, 20.0);
     assert!(!c.is_parallel_to(d));
     assert!(!d.is_parallel_to(c));
+    let e = Vector::new(0., -3., 0.);
+    let f = Vector::new(0., 112.355, 0.);
+    assert!(e.is_parallel_to(f));
+    assert!(f.is_parallel_to(e));
 }
 
 #[test]
