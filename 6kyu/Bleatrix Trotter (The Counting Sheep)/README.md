@@ -1,3 +1,5 @@
+## Detail
+
 [Bleatrix Trotter (The Counting Sheep)](https://www.codewars.com/kata/59245b3c794d54b06600002a)
 
 Bleatrix Trotter the sheep has devised a strategy that helps her fall asleep faster. First, she picks a number `N`. Then she starts naming `N`, `2 × N`, `3 × N`, and so on.
@@ -27,3 +29,7 @@ The last number Bleatrix Trotter sees or "INSOMNIA"
  if she will count forever
 
 *Please note, this challenge is not my idea. It's from Google Code Jam 2016*
+
+## Thinking
+
+Easy way is using `HashSet`. If you need some challenge, try to think in **bytes**.
