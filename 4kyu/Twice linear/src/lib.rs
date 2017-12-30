@@ -20,7 +20,7 @@ fn dbl_linear(n: u32) -> u32 {
     let mut z = vec![];
     for _ in 0..n {
         let y_ = 2 * x + 1;
-        let z_ = 3 * x + 1;
+        let z_ = y_ + x;
         y.push(y_);
         z.push(z_);
         x = std::cmp::min(y[0], z[0]);
