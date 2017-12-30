@@ -1,3 +1,5 @@
+## Detail
+
 [A Rule of Divisibility by 13](https://www.codewars.com/kata/a-rule-of-divisibility-by-13/train/rust)
 
 When you divide the successive powers of `10` by `13` you get the following remainders of the integer divisions: 
@@ -31,3 +33,7 @@ Call `thirt` the function which processes this sequence of operations on an inte
 `thirt(1234567)` calculates 178, then 87, then 87 and returns `87`.
 
 `thirt(321)` calculates 48, 48 and returns `48`
+
+## Thinking
+
+Use a collection to store `1, 10, 9, 12, 3, 4` and think about using `cycle()`, which will make it much easier.
