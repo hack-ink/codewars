@@ -26,3 +26,18 @@ If a character provided is not in the opposing alphabet, simply leave it as be.
 
 Use `zip()` in `Cipher::new()` and combine `find()` with `map_or()` in encode(decode).
 
+About `map_or()`:
+
+```rust
+fn map_or<U, F: FnOnce(T) -> U>(self, default: U, f: F) -> U
+Applies a function to the contained value (if any), or returns a default (if not).
+
+Examples
+
+let x = Some("foo");
+assert_eq!(x.map_or(42, |v| v.len()), 3);
+
+let x: Option<&str> = None;
+assert_eq!(x.map_or(42, |v| v.len()), 42);
+```
+
