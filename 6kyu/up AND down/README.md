@@ -1,3 +1,5 @@
+## Detail
+
 [up AND down](https://www.codewars.com/kata/56cac350145912e68b0006f0)
 
 *Don't be afraid, the description is rather long but - hopefully - it is in order that the process be well understood*.
@@ -39,3 +41,9 @@ arrange("after be arrived two My so") should return "be ARRIVED two AFTER my SO"
 - The string `"My after be arrived so two"` has the property (P) but can't be obtained by the **described process** so it won't be accepted as a result. The property (P) doesn't give unicity by itself.
 - Process: go from left to right, move only consecutive strings when needed.
 - For the first fixed tests the needed number of moves to get property (P) is given as a comment so that you can know if your process follows the rule.
+
+## Thinking
+
+First, use `split_whitespace()` to get every word. (convert them to uppercase at the same time)
+
+Then use index to make a loop and convert the word to lowercase which meet the condition.
