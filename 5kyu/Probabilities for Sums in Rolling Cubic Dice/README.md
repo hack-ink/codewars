@@ -66,3 +66,5 @@ Have a nice time!
 My solution is save every dice in a collection then calculate all possible.
 
 But you can try to implement a recursive function. `rolldice_sum_prob(sum - ???, dice_amount - 1)`
+
+Tips: Add `![allow(unused_parens)]` at the top. (12/29/2017 still got this warning)
