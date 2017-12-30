@@ -1,3 +1,5 @@
+## Detail
+
 [Reducing by steps](https://www.codewars.com/kata/reducing-by-steps/train/rust)
 
 Data: an array of integers, a function f of two variables and an init value.
@@ -42,3 +44,7 @@ oper_array(max, a, a[0]) => [18, 69, 69, 69, 69, 69]
 - lcm and gcd see: <https://en.wikipedia.org/wiki/Least_common_multiple><https://en.wikipedia.org/wiki/Greatest_common_divisor>
 - you could google "reduce function (your language)" to have a general view about the reduce functions.
 - In Shell bash, arrays are replaced by strings.
+
+## Thinking
+
+Easy kata but need a little thinking in **gcd** and **lcm** with `abs()`.
