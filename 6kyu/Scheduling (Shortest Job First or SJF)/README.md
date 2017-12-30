@@ -1,3 +1,5 @@
+## Thinking
+
 [Scheduling (Shortest Job First or SJF)](https://www.codewars.com/kata/scheduling-shortest-job-first-or-sjf/train/rust)
 
 Scheduling is how the processor decides which jobs(processes) get to use the processor and for how long. This can cause a lot of problems. Like a really long process taking the entire CPU and freezing all the other processes. One solution is Shortest Job First(SJF), which today you will be implementing.
@@ -34,3 +36,8 @@ so:
 ```rust
 SJF([3,10,20,1,2], 0) == 6
 ```
+## Thinking
+
+Easy kata.
+
+Tips: you can use `enumerate()` to get the index.
