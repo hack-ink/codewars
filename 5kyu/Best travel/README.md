@@ -27,3 +27,7 @@ Examples:
 `ys = [91, 74, 73, 85, 73, 81, 87]``choose_best_sum(230, 3, ys) -> 228`
 
 ## Thinking
+
+My use a collection to store the status of each element (checked or not). Then calculate every possible.
+
+If you want to see another way, see the comment in the code. And you might need some knowledge about Bijection.

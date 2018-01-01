@@ -1,4 +1,4 @@
-fn choose_best_sum(t: i32, k: i32, ls: &Vec<i32>) -> i32 {
+/*fn choose_best_sum(t: i32, k: i32, ls: &Vec<i32>) -> i32 {
     let (len, k) = (ls.len(), k as usize);
     if len < k { return -1; }
     let pivot = len - k;
@@ -32,6 +32,41 @@ fn choose_best_sum(t: i32, k: i32, ls: &Vec<i32>) -> i32 {
             }
         }
     }
+}*/
+
+fn choose_best_sum(t: i32, k: i32, ls: &Vec<i32>) -> i32 {
+    // We need to find subsets of ls with k elements.
+    // We do this by counting and applying the Bijection Rule
+    // to map equivalent bitsets(integers) to ls and get our subsets.
+
+    if (ls.len() >= std::mem::size_of::<usize>() * 8)
+        || (k as usize > ls.len()) {
+        return -1;
+    }
+
+    let mut best = -1;
+
+    // Bijection to bitset(usize integer) with n elements.
+    // Iterate all possible subsets, with all sizes, 1..n.
+    for i in 1..(1usize << ls.len()) {
+        // We are only interested in subsets with k-elements.
+        if i.count_ones() == k as u32 {
+            let mut sum = 0;
+
+            // Map bits to elemets in ls.
+            for j in 0..ls.len() {
+                if ((i >> j) & 0x1) != 0 {
+                    sum += ls[j];
+                }
+            }
+
+            // Ignore subsets larger then t
+            if sum <= t && sum > best {
+                best = sum;
+            }
+        }
+    }
+    best
 }
 
 fn testing(t: i32, k: i32, ls: &Vec<i32>, exp: i32) -> () {
