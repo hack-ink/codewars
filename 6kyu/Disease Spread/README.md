@@ -1,3 +1,5 @@
+## Detail
+
 [Disease Spread](https://www.codewars.com/kata/disease-spread/train/rust)
 
 We want to study the spread of the disease through the population of this school. The total population may be divided into three: the infecteds `(i)`, those who have recovered `(r)`, and those who are still susceptible `(s)`to get the disease.
@@ -32,3 +34,16 @@ The function `epidemic` will return the maximum number of infecteds as an *integ
 - Keeping track of the values of susceptibles, infecteds and recovereds you can plot the solutions of the 3 differential equations. See an example below on the plot.
 
 ![alternative text](http://i.imgur.com/xB6VSqzm.png)
+
+## Thinking
+
+```rust
+Since:
+    detail
+
+Therefore:
+    st = s - dt * b * s * i;
+    it = i + dt * (b * s * i - a * i);
+    rt = r + dt * i * a;
+```
+
