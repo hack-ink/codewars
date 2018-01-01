@@ -1,3 +1,5 @@
+## Detail
+
 [Draw a Circle.](https://www.codewars.com/kata/draw-a-circle/train/rust)
 
 In this kata, you will create a function, `circle`, that produces a string of some radius, according to certain rules that will be explained shortly. Here is the output of `circle` when passed the integer 10: 
@@ -45,3 +47,7 @@ Here are the edge-case rules; there are examples in the example test cases:
 - Any other result should end with `\n`.
 
 ***(Any translations would be greatly appreciated!)****
+
+## Thinking
+
+The number of █ always be a odd~

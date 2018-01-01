@@ -28,3 +28,18 @@ fn circle(radius: i32) -> String {
         }
     }
 }
+
+/*fn circle(radius: i32) -> String {
+    if radius < 0 { return "".to_owned(); }
+    if radius == 0 { return "\n".to_owned(); }
+    (-radius+1..radius).flat_map(|y| {
+        (-radius+1..radius+1).map(|x|
+        if x == radius { 
+            '\n' 
+        } else if x.pow(2) + y.pow(2) < radius.pow(2) { 
+            '█' 
+        } else { 
+            ' ' 
+        }).collect::<Vec<_>>()
+    }).collect()
+}*/
