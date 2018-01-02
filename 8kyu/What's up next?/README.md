@@ -13,4 +13,4 @@ next_item(["Joe" "Bob" "Sally"], "Bob") //=> "Sally"
 
 ## Thinking
 
-Use `skip_while()` and `nth()`.
+Just make a iterator then use `next()`. (tips: you might need `cloned`)
