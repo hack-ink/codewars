@@ -115,3 +115,4 @@ In other words:
 
 ## Thinking
 
+There is a tricky way. Just the preload function `Cons::to_vec()`~
