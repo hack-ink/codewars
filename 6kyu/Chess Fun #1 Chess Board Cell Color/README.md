@@ -28,3 +28,8 @@ For `cell1 = "A1" and cell2 = "H3"`, the output should be `false`.
 
 ## Thinking
 
+See my code. There are 3 different ways. But the last 2 are similar.
+
+1. Match each situation.
+2. 1. Calculate sum than compare.
+   2. Calculate remainder than compare.
