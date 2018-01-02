@@ -10,12 +10,10 @@ impl<T: Clone> Cons<T> {
     }
 
     pub fn from_iter<I>(it: I) -> Self
-        where I: IntoIterator<Item=T>
+        where I: IntoIterator<Item=T>, <I as IntoIterator>::IntoIter: DoubleEndedIterator
     {
         let mut tail = Cons::Null;
-        let mut v = vec![];
-        for item in it.into_iter() { v.push(item); }
-        while let Some(head) = v.pop() { tail = Cons::new(head, tail); }
+        for head in it.into_iter().rev() { tail = Cons::new(head, tail); }
         tail
     }
 
