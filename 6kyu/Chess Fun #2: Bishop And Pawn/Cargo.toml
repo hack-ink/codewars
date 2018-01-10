@@ -1,0 +1,6 @@
+[package]
+name = "chess-fun-2-bishop-and-pawn"
+version = "0.1.0"
+authors = ["AurevoirXavier <c.estlavie@icloud.com>"]
+
+[dependencies]
