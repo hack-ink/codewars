@@ -47,3 +47,4 @@ If you enjoyed this kata, be sure to check out [my other katas](https://www.code
 
 ## Thinking
 
+This kata has some bug.
