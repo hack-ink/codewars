@@ -41,3 +41,13 @@ kprimes_step(5, 20, 0, 50) => []
 
 ## Thinking
 
+The algorithm isn't so hard, so I won't focus on it.
+
+To solve this kata you should have a clearly logic:
+
+1.  Find the **kprimes**.
+    1.  Find the number which matches the requirements. (function: `prime_factors`)
+    2.  Collect them. (function: `count_kprimes`)
+2.  Check the `step`.
+    1.  Calculate the difference `primes[y] - primes[x]` *(primes[y] > primes[x])*. (If you want it more efficiency, remove the number which less than or equal to the `primes[x]`)
+3.  Return the result.
