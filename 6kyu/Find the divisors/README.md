@@ -16,3 +16,4 @@ You can assume that you will only get positive integers as inputs.
 
 ## Thinking
 
+Find the divs from a **range**.
