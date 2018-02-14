@@ -30,4 +30,4 @@ Examples:
 
 I use a collection to store the status of each element (checked or not). Then calculate every possible.
 
-If you want to see another way, see the comment in the code. And you might need some knowledge about Bijection.
+If you want to know another way, see the comment in the code. And you might need some knowledge about Bijection.
