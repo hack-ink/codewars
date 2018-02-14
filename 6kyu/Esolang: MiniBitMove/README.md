@@ -1,3 +1,5 @@
+## Detail
+
 [Esolang: MiniBitMove](https://www.codewars.com/kata/587c0138110b20624e000253)
 
 \# Task:
@@ -20,3 +22,6 @@ Code: 10
 Bits: 11001001001010
 Result: 00110110110101
 ```
+## Thinking
+
+Use `cycle()` to make a *infinite tape*.
