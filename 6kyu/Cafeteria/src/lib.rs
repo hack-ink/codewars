@@ -23,31 +23,51 @@ struct CoffeeBuilder {
 
 impl CoffeeBuilder {
     fn new() -> CoffeeBuilder {
-        unimplemented!()
+        CoffeeBuilder {
+            sort: String::new(),
+            milk: vec![],
+            sugar: vec![],
+        }
     }
 
     fn set_black_coffee(mut self) -> CoffeeBuilder {
-        unimplemented!()
+        self.sort = String::from("Black");
+
+        self
     }
 
     fn set_cubano_coffee(mut self) -> CoffeeBuilder {
-        unimplemented!()
+        self.sort = String::from("Cubano");
+        self.sugar.push(Sugar { sort: String::from("Brown") });
+
+        self
     }
 
     fn set_antoccino_coffee(mut self) -> CoffeeBuilder {
-        unimplemented!()
+        self.sort = String::from("Americano");
+        self.milk.push(Milk { fat: 0.5 });
+
+        self
     }
 
     fn with_milk(mut self, fat: f32) -> CoffeeBuilder {
-        unimplemented!()
+        self.milk.push(Milk { fat });
+
+        self
     }
 
     fn with_sugar(mut self, sort: String) -> CoffeeBuilder {
-        unimplemented!()
+        self.sugar.push(Sugar { sort });
+
+        self
     }
 
     fn build(self) -> Coffee {
-        unimplemented!()
+        Coffee {
+            sort: self.sort,
+            milk: self.milk,
+            sugar: self.sugar,
+        }
     }
 }
 
