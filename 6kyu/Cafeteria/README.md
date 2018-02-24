@@ -49,3 +49,4 @@ See test cases for more information and good luck!
 
 ## Thinking
 
+Nothing to say… If you have any question then see [this](https://doc.rust-lang.org/book/second-edition/ch05-01-defining-structs.html).
