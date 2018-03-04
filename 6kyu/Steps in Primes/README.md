@@ -41,4 +41,4 @@ For Go: nil slice is expected when there are no `step` between m and n. Example:
 
 ## Thinking
 
-In this kata, I make a big mistake. I had tried many many ways to optimize the `is_prime()`. Finally I realize that it's unnecessary to judge the number one by one. We should filter out the numbers which aren't **n-steps** first! Even we write down some stupid `is_prime()`, it works out! But for more efficiency I use the sexy theorem in the `is_prime()`.
+In this kata, I make a big mistake. I had tried many many ways to optimize the `is_prime()`. Finally I realize that it's unnecessary to judge the number one by one. We should filter out the numbers which aren't **n-steps** first! Even we write down some stupid `is_prime()`, it works out! But for more efficiency I use the sexy prime theorem in the `is_prime()`.
