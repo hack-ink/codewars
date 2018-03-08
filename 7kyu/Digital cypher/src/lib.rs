@@ -1,7 +1,8 @@
-static ALPHABET: &'static str = "abcdefghijklmnopqrstuvwxyz";
-
 fn encode(msg: String, n: i32) -> Vec<i32> {
-    Vec::new()
+    msg.chars()
+        .zip(n.to_string().chars().cycle())
+        .map(|(a, b)| a as i32 + b as i32 - 144)
+        .collect()
 }
 
 #[test]

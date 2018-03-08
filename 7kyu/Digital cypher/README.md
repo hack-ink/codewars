@@ -59,3 +59,5 @@ Encode("masterpiece",1939);  ==>  [ 14, 10, 22, 29, 6, 27, 19, 18, 6, 12, 8]
 -   [Digital cypher vol 3 - missing key](https://www.codewars.com/kata/5930d8a4b8c2d9e11500002a)
 
 ## Thinking
+
+Use `cycle()` to make a loop. There is a trick, cast `char` to `i32`~ 
