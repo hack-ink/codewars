@@ -1,7 +1,14 @@
 use std::collections::BTreeMap;
+use std::ascii::AsciiExt;
 
 fn letter_frequency(input: &str) -> BTreeMap<char, i32> {
-    unimplemented!();
+    let mut count: BTreeMap<char, i32> = BTreeMap::new();
+
+    for x in input.chars().filter(|c| c.is_alphabetic()).map(|c| AsciiExt::to_ascii_lowercase(&c)) {
+        *count.entry(x).or_insert(0) += 1;
+    }
+
+    count
 }
 
 #[test]

@@ -20,3 +20,4 @@ Letter frequency analysis is often used to analyse simple substitution cipher te
 
 ## Thinking
 
+Use `AsciiExt::to_ascii_lowercase()` will save your time.
