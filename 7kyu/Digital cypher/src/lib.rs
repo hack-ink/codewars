@@ -1,3 +1,5 @@
+static ALPHABET: &'static str = "abcdefghijklmnopqrstuvwxyz";
+
 fn encode(msg: String, n: i32) -> Vec<i32> {
     Vec::new()
 }

@@ -1,9 +1,9 @@
 use std::cmp::Ordering;
 
-const ALPHABETH: &'static str = "abcdefghijklmnopqrstuvwxyz";
+const ALPHABET: &'static str = "abcdefghijklmnopqrstuvwxyz";
 
 fn mix(s1: &str, s2: &str) -> String {
-    let mut weighted_chars = ALPHABETH.chars().filter_map(|c| {
+    let mut weighted_chars = ALPHABET.chars().filter_map(|c| {
         let c1 = s1.chars().filter(|&x| x == c).count();
         let c2 = s2.chars().filter(|&x| x == c).count();
         if c1 <= 1 && c2 <= 1 { return None; }
