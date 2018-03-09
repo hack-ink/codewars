@@ -1,5 +1,4 @@
 fn temps(v0: i32, slope: i32, d_tot: i32) -> i32 {
-    // your code
 }
 
 fn dotest(v0: i32, slope: i32, d_tot: i32, exp: i32) -> () {
