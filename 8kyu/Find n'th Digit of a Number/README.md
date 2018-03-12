@@ -23,3 +23,5 @@ findDigit(24, -8)      returns -1
 ```
 
 ## Thinking
+
+There's trick: you can return 0 if you can't `get()` the `nth`.
