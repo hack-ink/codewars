@@ -87,3 +87,24 @@ zoom(25)
 
 ## Thinking
 
+I think the most efficient is calculate it in half. For example:
+
+```rust
+1 1 1 1 1
+1 0 0 0 1
+1 0 1 0 1
+1 0 0 0 1
+1 1 1 1 1
+
+=>
+
+top = [
+    1 1 1 1 1
+    1 + 000 + reverse 1
+]
+
+mid = 1 0 + 1 + reverse 1 0
+
+bottom = reverse half 
+```
+
