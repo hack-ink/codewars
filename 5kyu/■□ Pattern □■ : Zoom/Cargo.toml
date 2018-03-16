@@ -1,0 +1,6 @@
+[package]
+name = "pattern-zoom"
+version = "0.1.0"
+authors = ["Aurevoir Xavier <c.estlavie@icloud.com>"]
+
+[dependencies]
