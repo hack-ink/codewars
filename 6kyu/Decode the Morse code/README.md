@@ -37,3 +37,4 @@ After you complete this kata, you may try yourself at [Decode the Morse code, ad
 
 ## Thinking
 
+`split("   ")` first, then `split_whitespace`.
