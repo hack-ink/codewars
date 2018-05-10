@@ -1,31 +1,26 @@
 fn n_linear(m: &[u32], n: usize) -> u32 {
     if n == 0 { return 1; }
-    if n < m.len() { return m[n] + 1; }
+    if n < m.len() { return m[n - 1] + 1; }
 
     let mut groups: Vec<Vec<u32>> = m.iter().map(|&y| vec![y + 1]).collect();
     let mut x = m.iter().min().unwrap() + 1;
-    let mut t = 0;
-
-    let mut check = vec![];
+    let mut t = 1;
 
     loop {
-        t += 1;
+        let len = x.to_string().len();
 
         for (i, group) in groups.iter_mut().enumerate() {
-            let x = x * m[i] + 1;
+            if len + m[i].to_string().len() > 6 { continue; }
 
-            if !group.contains(&x) { group.push(x); }
+            group.push(x * m[i] + 1);
         }
 
-        println!("{:?}, {}", groups, x);
-
-        let mut i = 0;
-
-        for group in 1..groups.len() {
-            if groups[group - 1][0] > groups[group][0] {
-                i = group;
-            }
-        }
+        let i = groups.iter()
+            .map(|v| v[0])
+            .enumerate()
+            .min_by_key(|&(_, x)| x)
+            .unwrap()
+            .0;
 
         if x == groups[i][0] {
             groups[i].remove(0);
@@ -35,12 +30,9 @@ fn n_linear(m: &[u32], n: usize) -> u32 {
 
         x = groups[i].remove(0);
 
-        check.push(x);
+        t += 1;
 
-        if n == t {
-            println!("{:?}", check);
-            return x;
-        }
+        if n == t { return x; }
     }
 }
 
@@ -48,15 +40,11 @@ fn n_linear(m: &[u32], n: usize) -> u32 {
 fn pair_test() {
     assert_eq!(n_linear(&[2, 3], 10), 22);
     assert_eq!(n_linear(&[3, 2], 10), 22);
+    assert_eq!(n_linear(&[3, 2], 234), 1339);
 }
 
 #[test]
 fn triplet_test() {
     assert_eq!(n_linear(&[5, 7, 8], 10), 64);
     assert_eq!(n_linear(&[5, 7, 8], 11), 65);
-}
-
-#[test]
-fn try() {
-    println!("{}", n_linear(&[8, 4, 2], 6));
 }
