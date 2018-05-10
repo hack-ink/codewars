@@ -36,6 +36,38 @@ fn n_linear(m: &[u32], n: usize) -> u32 {
     }
 }
 
+fn think(m: &[u32], n: usize) -> u32 {
+    let mut m = m.to_vec();
+
+    m.sort();
+
+    let mut ratio: Vec<u32> = m[..m.len() - 1].iter()
+        .zip(m[1..].iter())
+        .map(|(x, y)| y / x)
+        .collect();
+
+    let mut v = 1;  // current value
+    let mut t = 1;  // loop times
+    let mut p = 1;  // period
+    let mut i = 0;  // index of m
+
+    loop {
+        if p <= m[i + 1] {
+            let next = m[i] * v + 1;
+
+            p += 1;
+            i += 1;
+
+            if x == next { continue; }
+
+            x = next;
+            t += 1;
+        }
+
+        if t == n { return x; }
+    }
+}
+
 #[test]
 fn pair_test() {
     assert_eq!(n_linear(&[2, 3], 10), 22);
@@ -47,4 +79,9 @@ fn pair_test() {
 fn triplet_test() {
     assert_eq!(n_linear(&[5, 7, 8], 10), 64);
     assert_eq!(n_linear(&[5, 7, 8], 11), 65);
+}
+
+#[test]
+fn try() {
+    assert_eq!(think(&[5, 7, 8], 11), 65);
 }
