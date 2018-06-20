@@ -8,7 +8,7 @@ If input does not contain 'and' or 'but', return the original string. If a blank
 
 If substring `'apparently'` is already directly after an `'and'` and/or `'but'`, do not add another. (Do not add duplicates).
 
-# Examples:
+\# Examples:
 
 Input 1 
 
@@ -42,3 +42,4 @@ reference that may help: <https://www.youtube.com/watch?v=rz5TGN7eUcM>
 
 ## Thinking
 
+Use `match` to catch the keyword and finish it in one loop.
