@@ -1,1 +1,0 @@
-CMakeLists.txt not found in /Users/aurevoirxavier/Documents/program/codewars-rust/5kyu/Easy Cyclist's Training
