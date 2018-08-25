@@ -70,3 +70,5 @@
 \# Zizou
 
 ## Thinking
+
+There's a trick `b / d * d`.
