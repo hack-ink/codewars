@@ -1,3 +1,5 @@
+## Detail
+
 [PI approximation](https://www.codewars.com/kata/pi-approximation)
 
 The aim of the kata is to try to show how difficult it can be to calculate decimals of an irrational number with a certain precision. We have chosen to get a few decimals of the number "pi" using the following infinite series (Leibniz 1646–1716): 
@@ -24,3 +26,6 @@ iter_pi(0.001) --> [1000, 3.1405926538]
 Unfortunately, this series converges too slowly to be useful, as it takes over 300 terms to obtain a 2 decimal place precision. To obtain 100 decimal places of PI, it was calculated that one would need to use at least 10^50 terms of this expansion!
 
 About PI : <http://www.geom.uiuc.edu/~huberty/math5337/groupe/expresspi.html>
+
+## Thinking
+

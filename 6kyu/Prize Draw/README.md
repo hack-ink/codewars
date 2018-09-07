@@ -1,3 +1,5 @@
+## Detail
+
 [Prize Draw](https://www.codewars.com/kata/5616868c81a0f281e500005c)
 
 To participate in a prize draw each one gives his/her firstname. 
@@ -25,3 +27,6 @@ The function should return: `PauL`
 \#Note: If `st` is empty return "No participants".
 
 If n is greater than the number of participants then return "Not enough participants".
+
+## Thinking
+
