@@ -1,3 +1,5 @@
+## Detail
+
 [Integers: Recreation One](https://www.codewars.com/kata/55aa075506463dac6600010d)
 
 Divisors of 42 are : 1, 2, 3, 6, 7, 14, 21, 42. These divisors squared are: 1, 4, 9, 36, 49, 196, 441, 1764. The sum of the squared divisors is 2500 which is 50 * 50, a square!
@@ -14,3 +16,6 @@ list_squared(42, 250) --> [[42, 2500], [246, 84100]]
 ```
 
 The form of the examples may change according to the language, see `Example Tests:` for more details.
+
+## Thinking
+

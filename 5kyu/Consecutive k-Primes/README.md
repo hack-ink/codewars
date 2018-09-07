@@ -1,3 +1,5 @@
+## Detail
+
 [Consecutive k-Primes](https://www.codewars.com/kata/573182c405d14db0da00064e)
 
 A natural number is called **k-prime** if it has exactly k prime factors, counted with multiplicity. A natural number is thus prime if and only if it is 1-prime.
@@ -22,3 +24,6 @@ consec_kprimes(4, [10175, 10185, 10180, 10197]) => 3 because 10175-10185 and 101
 ```
 
 \# Note: It could be interesting to begin with: <https://www.codewars.com/kata/k-primes>
+
+## Thinking
+

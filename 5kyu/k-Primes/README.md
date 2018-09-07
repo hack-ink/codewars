@@ -1,3 +1,5 @@
+## Detail
+
 [k-Primes](https://www.codewars.com/kata/5726f813c8dcebf5ed000a6b)
 
 A natural number is called **k-prime** if it has exactly k prime factors, counted with multiplicity.
@@ -42,3 +44,6 @@ puzzle(143) --> 2 ([3 + 12 + 128, 7 + 8 + 128] are solutions)
 - The first function would have been better named: `findKprimes` or `kPrimes` :-)
 - In C some helper functions are given (see declarations in 'Solution').
 - For Go: nil slice is expected when there are no k-primes between `start` and `end`.
+
+## Thinking
+

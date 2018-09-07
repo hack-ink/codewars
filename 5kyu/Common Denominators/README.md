@@ -1,3 +1,5 @@
+## Detail
+
 [Common denominators](https://www.codewars.com/kata/54d7660d2daf68c619000d95)
 
 You will have a list of rationals in the form 
@@ -63,3 +65,6 @@ convertFracs [(1, 2), (1, 3), (1, 4)] `shouldBe` [(6, 12), (4, 12), (3, 12)]
 input is a string, e.g `"2,4,2,6,2,8"`
 
 output is then  `"6 12 4 12 3 12"`
+
+## Thinking
+

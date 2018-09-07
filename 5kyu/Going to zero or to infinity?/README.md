@@ -1,3 +1,5 @@
+## Detail
+
 [Going to zero or to infinity?](https://www.codewars.com/kata/55a29405bc7d2efaff00007c)
 
 Consider the following numbers (where n! is factorial(n)):
@@ -23,3 +25,6 @@ To avoid discussions about rounding, if the result of the calculation is designe
 `1.2125000000000001 will be truncated to 1.2125`
 
 \#Remark: Keep in mind that factorials grow rather rapidly, and you can need to handle large inputs.
+
+## Thinking
+
