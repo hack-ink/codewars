@@ -1,3 +1,5 @@
+## Detail
+
 [Floating-point Approximation (I)](https://www.codewars.com/kata/floating-point-approximation-i/train/rust)
 
 Consider the function 
@@ -19,3 +21,6 @@ Note:
 Don't round or truncate your results, you will pass the tests if
 
 `abs((your_result - expected) / expected) <= 1e-12`.
+
+## Thinking
+

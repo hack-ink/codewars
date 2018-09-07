@@ -1,3 +1,5 @@
+## Detail
+
 [Integers: Recreation Two](https://www.codewars.com/kata/55e86e212fce2aae75000060)
 
 We are still with squared integers.
@@ -23,3 +25,6 @@ because `(2² + 3²) * (4² + 5²) = 533 = (7² + 22²) = (23² + 2²)`
 `prod2sum(1, 1, 3, 5) should return [[2, 8]]` (there are not always 2 solutions).
 
 \##Hint Take a sheet of paper and with a bit of algebra try to write the product of squared numbers in another way.
+
+## Thinking
+
