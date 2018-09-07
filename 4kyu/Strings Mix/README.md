@@ -1,3 +1,5 @@
+## Detail
+
 [Strings Mix](https://www.codewars.com/kata/5629db57620258aa9d000014)
 
 Given two strings s1 and s2, we want to visualize how different the two strings are. We will only take into account the *lowercase*letters (a to z). First let us count the frequency of each *lowercase* letters in s1 and s2.
@@ -43,3 +45,6 @@ s1 = "mmmmm m nnnnn y&friend&Paul has heavy hats! &"
 s2 = "my frie n d Joh n has ma n y ma n y frie n ds n&"
 mix(s1, s2) --> "1:mmmmmm/=:nnnnnn/1:aaaa/1:hhh/2:yyy/2:dd/2:ff/2:ii/2:rr/E:ee/E:ss"
 ```
+
+## Thinking
+

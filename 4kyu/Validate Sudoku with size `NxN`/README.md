@@ -1,3 +1,5 @@
+## Detail
+
 [Validate Sudoku with size \`NxN\`](https://www.codewars.com/kata/540afbe2dc9f615d5e000425)
 
 Given a Sudoku data structure with size `NxN, N > 0 and √N == integer`, write a method to validate if it has been filled out correctly.
@@ -26,3 +28,6 @@ The data structure is a multi-dimensional Array(in Rust: `Vec<Vec<u32>>`) , ie:
 - Rows may only contain integers: `1..N (N included)`
 - Columns may only contain integers: `1..N (N included)`
 - *'Little squares'* (`3x3` in example above) may also only contain integers: `1..N (N included)`
+
+## Thinking
+
