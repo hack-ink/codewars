@@ -1,3 +1,5 @@
+## Detail
+
 [Moves in squared strings (III)](https://www.codewars.com/kata/56dbeec613c2f63be4000be6)
 
 You are given a string of `n` lines, each substring being `n` characters long: For example:
@@ -60,3 +62,5 @@ oper(selfie_and_diag1, s) => "abcd|aeim\nefgh|bfjn\nijkl|cgko\nmnop|dhlp"
 - Bash Note: The ouput strings should be separated by \r instead of \n. See "Sample Tests".
 
 A forthcoming kata will study other tranformations.
+
+## Thinking

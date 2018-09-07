@@ -1,3 +1,5 @@
+## Detail
+
 [Moves in squared strings (II)](https://www.codewars.com/kata/56dbe7f113c2f63570000b86)
 
 You are given a string of `n` lines, each substring being `n` characters long: For example:
@@ -60,3 +62,6 @@ Forthcoming katas will study other tranformations.
 \# Bash Note:
 
 The input strings are separated by `,` instead of `\n`. The ouput strings should be separated by `\r` instead of `\n`. See "Sample Tests".
+
+## Thinking
+

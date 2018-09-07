@@ -1,3 +1,5 @@
+## Detail
+
 [Moves in squared strings (IV)](https://www.codewars.com/kata/moves-in-squared-strings-iv/train/rust)
 
 You are given a string of `n` lines, each substring being `n` characters long: For example:
@@ -58,3 +60,6 @@ oper(selfie_diag2_counterclock, s) => "abcd|plhd|dhlp\nefgh|okgc|cgko\nijkl|njfb
 - The form of the parameter `fct` in oper changes according to the language. You can see each form according to the language in "Your test cases".
 - It could be easier to take these katas from number (I) to number (IV)
 - Bash Note: The ouput strings should be separated by \r instead of \n. See "Sample Tests".
+
+## Thinking
+

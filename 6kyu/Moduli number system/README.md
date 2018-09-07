@@ -1,3 +1,5 @@
+## Detail
+
 [Moduli number system](https://www.codewars.com/kata/moduli-number-system/train/rust)
 
 A number system with moduli is deﬁned by a vector of k moduli, [m1,m2, ···,mk]. 
@@ -20,3 +22,6 @@ fromNb2Str(11, [2,3,5]) -> "-1--2--1-"
 fromNb2Str(6, [2, 3, 4]) -> "Not applicable", since 2 and 4 are not coprime
 
 fromNb2Str(7, [2, 3]) -> "Not applicable" since 2 * 3 < 7
+
+## Thinking
+

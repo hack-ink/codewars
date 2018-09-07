@@ -1,3 +1,5 @@
+## Detail
+
 [Irreducible Sum of Rationals](https://www.codewars.com/kata/irreducible-sum-of-rationals/train/rust)
 
 You will have a list of rationals in the form
@@ -41,3 +43,6 @@ c(13, 12) R
   ```
 
 - See: Example Tests for more examples
+
+## Thinking
+
