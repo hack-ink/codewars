@@ -1,3 +1,5 @@
+## Detail
+
 [Tiny Three-Pass Compiler](https://www.codewars.com/kata/5265b0885fda8eac5900093b)
 
 You are writing a three-pass compiler for a simple programming language into a small assembly language.
@@ -123,3 +125,5 @@ fn simulate(assembly : Vec<&str>, argv : Vec<i32>) -> i32 {
   r.0
 }
 ```
+
+## Thinking
