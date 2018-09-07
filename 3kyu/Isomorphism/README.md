@@ -1,3 +1,5 @@
+## Detail
+
 [Isomorphism](https://www.codewars.com/kata/5922543bf9c15705d0000020)
 
 We will walk through what is isomorphism, and define some common isomorphism. It is closely related to bijection (see <https://en.wikipedia.org/wiki/Bijection>).
@@ -10,3 +12,6 @@ P.S. The tests are CORRECT. There're some easy-to-make mistakes (see the discuss
 Detailed instruction is written in the comments of the initial solution.
 
 If you have trouble, you can look at [Bijection](https://en.wikipedia.org/wiki/Bijection) for intuition.
+
+## Thinking
+
