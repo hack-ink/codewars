@@ -1,3 +1,5 @@
+## Detail
+
 [Last digit of a huge number](https://www.codewars.com/kata/5518a860a73e708c0a000027)
 
 For a given list `[x1, x2, x3, ..., xn]` compute the last (decimal) digit of `x1 ^ (x2 ^ (x3 ^ (... ^ xn)))`. 
@@ -15,3 +17,6 @@ because `3 ^ (4 ^ 2) = 3 ^ 16 = 43046721`.
 *Corner cases:* we assume that `0 ^ 0 = 1` and that `lastDigit` of an empty list equals to 1.
 
 This kata generalizes [Last digit of a large number](http://www.codewars.com/kata/last-digit-of-a-large-number/haskell); you may find useful to solve it beforehand.
+
+## Thinking
+

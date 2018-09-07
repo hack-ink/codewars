@@ -1,3 +1,5 @@
+## Detail
+
 [Point in Polygon](https://www.codewars.com/kata/point-in-polygon-1/train/rust)
 
 \# The problem:
@@ -26,3 +28,6 @@ showAndTest([[-5, -5], [5, -5], [0, 5]], [0,0], true)
 then you'll see:
 
 The drawing window is 14x14 units wide and centered at the origin.
+
+## Thinking
+
