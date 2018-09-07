@@ -1,3 +1,5 @@
+## Detail
+
 [My smallest code interpreter (aka Brainfuck)](https://www.codewars.com/kata/526156943dfe7ce06200063e)
 
 Inspired from real-world [Brainfuck](http://en.wikipedia.org/wiki/Brainfuck), we want to create an interpreter of that language which will support the following instructions (the machine memory or 'data' should behave like a potentially infinite array of bytes, initialized to 0):
@@ -19,3 +21,5 @@ The function will take in input...
 ... and will return ...
 
 - the output of the interpreted code (always as a string), produced by the `.` instruction.
+
+## Thinking
