@@ -1,3 +1,5 @@
+## Detail
+
 [Esolang Interpreters #4 - Boolfuck Interpreter](https://www.codewars.com/kata/5861487fdb20cff3ab000030)
 
 *For the rest of this Kata, I recommend considering "fuck" to be non-profane.*
@@ -52,3 +54,6 @@ Good luck :D
 2. [Esolang Interpreters #2 - Custom Smallfuck Interpreter](http://codewars.com/kata/esolang-interpreters-number-2-custom-smallfuck-interpreter)
 3. [Esolang Interpreters #3 - Custom Paintfuck Interpreter](http://codewars.com/kata/esolang-interpreters-number-3-custom-paintf-star-star-k-interpreter)
 4. **Esolang Interpreters #4 - Boolfuck Interpreter**
+
+## Thinking
+
