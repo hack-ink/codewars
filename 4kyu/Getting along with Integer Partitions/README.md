@@ -1,3 +1,5 @@
+## Detail
+
 [Getting along with Integer Partitions](https://www.codewars.com/kata/55cf3b567fc0e02b0b00000b)
 
 From wikipedia <https://en.wikipedia.org/wiki/Partition_(number_theory)>
@@ -42,3 +44,6 @@ Range is an integer, Average and Median are float numbers rounded to two decimal
 \#Hints: Try to optimize your program to avoid timing out.
 
 Memoization can be helpful but it is not mandatory for being successful.
+
+## Thinking
+

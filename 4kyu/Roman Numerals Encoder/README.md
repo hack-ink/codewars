@@ -1,3 +1,5 @@
+## Detail
+
 [Roman Numerals Encoder](https://www.codewars.com/kata/51b62bf6a9c58071c600001b)
 
 Create a function taking a positive integer as its parameter and returning a string containing the Roman Numeral representation of that integer.
@@ -26,3 +28,6 @@ M          1,000
 Remember that there can't be more than 3 identical symbols in a row.
 
 More about roman numerals - <http://en.wikipedia.org/wiki/Roman_numerals>
+
+## Thinking
+

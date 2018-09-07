@@ -1,3 +1,5 @@
+## Detail
+
 [Square into Squares. Protect trees!](https://www.codewars.com/kata/54eb33e5bc1a25440d000891)
 
 My little sister came back home from school with the following task: given a squared sheet of paper she has to cut it in pieces which, when assembled, give squares the sides of which form an increasing sequence of numbers. At the beginning it was lot of fun but little by little we were tired of seeing the pile of torn paper. So we decided to write a program that could help us and protects trees.
@@ -37,3 +39,5 @@ decompose 4  returns "Nothing"
 \# Hint:
 
 Very often `xk` will be `n-1`.
+
+## Thinking
