@@ -1,3 +1,5 @@
+## Detail
+
 [Simple Interactive Interpreter](https://www.codewars.com/kata/52ffcfa4aff455b3c2000750)
 
 \# Task:
@@ -177,3 +179,6 @@ The following table lists the language's operators grouped in order of precedenc
 | Additive       | +, -      |
 | Assignment     | =         |
 | Function       | =>        |
+
+## Thinking
+
