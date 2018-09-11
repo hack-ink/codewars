@@ -1,10 +1,5 @@
 fn countSheep(n: u32) -> String {
-    let mut s = String::new();
-    for i in 1..=n {
-        s = format!("{}{} sheep...", s, i);
-    }
-
-    s
+    (1..=n).map(|i| format!("{} sheep...", i)).collect()
 }
 
 #[test]
