@@ -1,5 +1,4 @@
-fn array_diff<T: PartialEq>(a: Vec<T>, b: Vec<T>) -> Vec<T> {
-    let mut a = a;
+fn array_diff<T: PartialEq>(mut a: Vec<T>, b: Vec<T>) -> Vec<T> {
     a.retain(|x| !b.contains(x));
 
     a
