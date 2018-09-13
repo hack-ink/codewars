@@ -1,0 +1,6 @@
+[package]
+name = "decode-the-morse-code--advanced"
+version = "0.1.0"
+authors = ["Xavier Lau <c.estlavie@icloud.com>"]
+
+[dependencies]
