@@ -25,36 +25,40 @@ impl MorseDecoder {
         }
     }
 
-    fn bit_to_code(morse: &mut String, bit: &str) {
-        match bit {
-            "11" => morse.push('.'),
-            "00" => (),
-            "111111" => morse.push('-'),
-            "000000" => morse.push(' '),
-            "00000000000000" => morse.push('\\'),
-            _ if bit.starts_with('1') => morse.push('.'),
-            _ => ()
-        }
-    }
-
     pub fn decode_bits(&self, encoded: &str) -> String {
-        let mut morse = String::new();
-        let mut bit = String::from("1");
-        let mut bits: Vec<_> = encoded.chars().collect();
+        let mut bits = vec![];
+        let mut rate = 1;
 
-        while bits[0] == '0' { bits.remove(0); }
-        while bits[bits.len() - 1] == '0' { bits.pop(); }
+        {
+            let mut prev_c = '0';
+            let mut count = 0;
+            for c in encoded.trim_matches('0').chars() {
+                if prev_c != c {
+                    if prev_c == '1' && count < rate { rate = count; }
+                    bits.push((prev_c, count));
 
-        for i in 1..bits.len() {
-            if bits[i - 1] != bits[i] {
-                MorseDecoder::bit_to_code(&mut morse, &bit);
-                bit.clear();
+                    prev_c = c;
+                    count = 1;
+                } else { count += 1; }
             }
 
-            bit.push(bits[i]);
+            if prev_c == '1' && count < rate { rate = count; }
+            bits.push((prev_c, count));
         }
 
-        MorseDecoder::bit_to_code(&mut morse, &bit);
+        let (three_time_unit, seven_time_unit) = (rate * 3, rate * 7);
+        let mut morse = String::new();
+        for (c, count) in bits.into_iter() {
+            match c {
+                '1' => if three_time_unit == count { morse.push('-'); } else { morse.push('.'); }
+                '0' => {
+                    if three_time_unit == count { morse.push(' '); }
+                    if seven_time_unit == count { morse.push('\\'); }
+                }
+                _ => unreachable!()
+            }
+        }
+
         morse
     }
 
@@ -74,5 +78,8 @@ impl MorseDecoder {
 fn examples() {
     let decoder = MorseDecoder::new();
 //    assert_eq!(decoder.decode_morse(&decoder.decode_bits("1100110011001100000011000000111111001100111111001111110000000000000011001111110011111100111111000000110011001111110000001111110011001100000011")), "HEY JUDE".to_string());
-    assert_eq!(decoder.decode_morse(&decoder.decode_bits("111111000000111111000000111111000000111111000000000000000000111111000000000000000000111111111111111111000000111111000000111111111111111111000000111111111111111111000000000000000000000000000000000000000000111111000000111111111111111111000000111111111111111111000000111111111111111111000000000000000000111111000000111111000000111111111111111111000000000000000000111111111111111111000000111111000000111111000000000000000000111111")), "I".to_string());
+//    assert_eq!(decoder.decode_morse(&decoder.decode_bits("111000000000111")), "EE".to_string());
+//    assert_eq!(decoder.decode_morse(&decoder.decode_bits("10001")), "EE".to_string());
+//    assert_eq!(decoder.decode_morse(&decoder.decode_bits("01110")), "E".to_string());
+    assert_eq!(decoder.decode_morse(&decoder.decode_bits("1110111")), "M".to_string());
 }
