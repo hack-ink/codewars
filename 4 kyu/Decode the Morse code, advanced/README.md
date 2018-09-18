@@ -1,4 +1,5 @@
 ## Detail
+
 [Decode the Morse code, advanced](https://www.codewars.com/kata/decode-the-morse-code-advanced/train/rust)
 <div style="border:1px solid;position:relative;padding:1ex 1ex 1ex 11.1em;"><div style="position:absolute; left:0;top:0;bottom:0; width:10em; padding:1ex;text-align:center;border:1px solid;margin:0 1ex 0 0;color:#000;background-color:#eee;font-variant:small-caps">Part of Series 2/3</div><div>This kata is part of a series on the Morse code. Make sure you solve the [previous part](/kata/decode-the-morse-code) before you try this one. After you solve this kata, you may move to the [next one](/kata/decode-the-morse-code-for-real).</div></div><br>
 In this kata you have to write a <a href="https://en.wikipedia.org/wiki/Morse_code">Morse code</a> decoder for <a href="https://en.wikipedia.org/wiki/Electrical_telegraph">wired electrical telegraph</a>.
@@ -37,4 +38,13 @@ All the test strings would be valid to the point that they could be reliably dec
 Good luck!
 
 After you master this kata, you may try to <a href="http://www.codewars.com/kata/decode-the-morse-code-for-real">Decode the Morse code, for real</a>.
+
 ## Thinking
+
+To solve this problem, I divided it into three parts:
+
+1. find the `rate`
+2. decode the binary code
+3. decode the morse code
+
+The key is the first step. To find the `rate`, just compare the shortest `111...` with `000...` (you should note that the `1` is perfectly accurate but the `0` not).
