@@ -4,7 +4,7 @@
 git add .
 currentTime=`date +%H:%M/%x`
 git commit -m "$currentTime"
-proxychains4 git push
+git push
 
 echo Update Successfully!
 
