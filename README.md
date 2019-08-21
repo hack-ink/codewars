@@ -6,6 +6,6 @@ I wrote my **thinking** in the `README.md` which under the relevant kata's folde
 
 Each folder is a **cargo** project. 
 
-You can simply test your data by adding function(s) in `lib.rs`, don't forget to add `#[test]` over them.
+You can simply test your data by adding function(s) in `lib.rs`, don't forget to add `#[test]` above them.
 
 Warning: Most of the kata was **related** to some mathematical theories. I won't **elaborate** or **prove** those theories.
