@@ -1,6 +1,6 @@
-<center><h3>Moved to <a href="https://github.com/l2ust/codewars">l2ust/codewars</a></h3></center>
-<center><h3>Moved to <a href="https://github.com/l2ust/codewars">l2ust/codewars</a></h3></center>
-<center><h3>Moved to <a href="https://github.com/l2ust/codewars">l2ust/codewars</a></h3></center>
+<h3 align="center">Moved to <a href="https://github.com/l2ust/codewars">l2ust/codewars</a></h3>
+<h3 align="center">Moved to <a href="https://github.com/l2ust/codewars">l2ust/codewars</a></h3>
+<h3 align="center">Moved to <a href="https://github.com/l2ust/codewars">l2ust/codewars</a></h3>
 
 ---
 
