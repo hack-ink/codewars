@@ -1,2 +1,1 @@
-*.md linguist-language=Rust
-*.tomal linguist-language=Rust
+Cargo.lock linguist-generated=true

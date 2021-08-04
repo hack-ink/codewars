@@ -1,1 +1,0 @@
-fn square_area_to_circle(size: f64) -> f64 { size * std::f64::consts::FRAC_PI_4 }

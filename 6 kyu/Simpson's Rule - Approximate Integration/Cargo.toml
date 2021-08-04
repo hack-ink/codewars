@@ -1,6 +1,0 @@
-[package]
-name = "simpson-s-rule-approximate-integration"
-version = "0.1.0"
-authors = ["AurevoirXavier <c.estlavie@icloud.com>"]
-
-[dependencies]

@@ -1,6 +1,0 @@
-[package]
-name = "maximum-multiple"
-version = "0.1.0"
-authors = ["Xavier Lau <c.estlavie@icloud.com>"]
-
-[dependencies]

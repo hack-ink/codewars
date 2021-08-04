@@ -1,9 +1,3 @@
-<h3 align="center">Moved to <a href="https://github.com/l2ust/codewars">l2ust/codewars</a></h3>
-<h3 align="center">Moved to <a href="https://github.com/l2ust/codewars">l2ust/codewars</a></h3>
-<h3 align="center">Moved to <a href="https://github.com/l2ust/codewars">l2ust/codewars</a></h3>
-
----
-
 ![AurevoirXavier's codewars badges](https://www.codewars.com/users/AurevoirXavier/badges/small)
 
 
